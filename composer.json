@@ -1,10 +1,22 @@
 {
-    "name": "joanjpx/prueba",
+    "name": "joanjpx/php-challenge",
     "authors": [
         {
             "name": "Joan Perez",
             "email": "joansyn.s@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^8.5"
+    }
 }
